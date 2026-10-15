@@ -1,0 +1,2688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoescuela Javier · Formación Vial en Cornellà de Llobregat</title>
+    <meta name="description" content="Autoescuela Javier en Cornellà de Llobregat (Passatge de les Delícies, 9). Enseñanza vial rigurosa, trato cercano y preparación honesta para aprender a conducir con seguridad.">
+
+    <!-- Open Graph / Metadatos sociales (Sin canonical inventado para prototipo local) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Autoescuela Javier · Aprende a conducir de verdad en Cornellà">
+    <meta property="og:description" content="Formación vial tradicional, cercana y rigurosa en Cornellà de Llobregat. Profesores con experiencia que te hablan claro para que conduzcas con seguridad.">
+    <meta property="og:site_name" content="Autoescuela Javier">
+
+    <!-- Tipografías: Barlow, Barlow Condensed, Source Sans 3 y Newsreader -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Datos estructurados JSON-LD (Únicamente con datos reales verificados) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DrivingSchool",
+      "name": "Autoescuela Javier",
+      "telephone": "+34933779057",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Passatge de les Delícies, 9",
+        "addressLocality": "Cornellà de Llobregat",
+        "postalCode": "08940",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat"
+    }
+    </script>
+
+    <style>
+        /* ==========================================================================
+           1. SISTEMA DE DISEÑO Y VARIABLES (CLÁSICO CONTEMPORÁNEO · MOBILE-FIRST)
+           ========================================================================== */
+        :root {
+            /* Paleta de color corporativa intacta */
+            --navy-deep: #122E4B;
+            --navy-primary: #173A5E;
+            --blue-corporate: #285D8A;
+            --blue-muted: #4A789C;
+            --blue-tint: #EEF3F7;
+            
+            --red-classic: #BC4141;
+            --red-dark: #9A3232;
+            --red-tint: #F9ECEC;
+
+            --bg-warm: #FAF9F6;
+            --bg-paper: #FFFFFF;
+            --bg-stone: #F2F0EB;
+            
+            --border-light: #E2E6EA;
+            --border-strong: #C8D0D8;
+            
+            --text-main: #26313A;
+            --text-secondary: #4E5D6C;
+            --text-muted: #6E7D8B;
+            
+            --whatsapp-green: #1F8E55;
+            --whatsapp-hover: #187344;
+
+            /* Tipografía */
+            --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-display: 'Barlow', sans-serif;
+            --font-condensed: 'Barlow Condensed', sans-serif;
+            --font-editorial: 'Newsreader', Georgia, serif;
+
+            /* Espaciado Mobile-First calibrado para 390px y escalado a escritorio */
+            --container-max: 1200px;
+            --container-pad: 1.125rem;
+            --section-py: 3.25rem;
+
+            /* Sombras y bordes sutiles */
+            --radius-sm: 4px;
+            --radius-md: 6px;
+            --shadow-subtle: 0 8px 24px -8px rgba(23, 58, 94, 0.07);
+            --shadow-card: 0 12px 32px -12px rgba(23, 58, 94, 0.12);
+            --transition: 0.22s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        @media (min-width: 768px) {
+            :root {
+                --container-pad: 2rem;
+                --section-py: 4.75rem;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            :root {
+                --container-pad: 2.5rem;
+                --section-py: 6rem;
+            }
+        }
+
+        /* ==========================================================================
+           2. RESET, ACCESIBILIDAD Y CONTROL DE SCROLL
+           ========================================================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: 4.5rem;
+            background-color: var(--bg-warm);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        @media (min-width: 1080px) {
+            html {
+                scroll-padding-top: 5.5rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        body {
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: var(--bg-warm);
+            /* Espacio inferior garantizado en móvil para que la barra fija nunca tape nada */
+            padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 0;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color var(--transition), background-color var(--transition), border-color var(--transition);
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        button {
+            font: inherit;
+            color: inherit;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--red-classic);
+            outline-offset: 3px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 1rem;
+            background: var(--navy-primary);
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            z-index: 1000;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+        }
+        .skip-link:focus {
+            top: 1rem;
+        }
+
+        /* ==========================================================================
+           3. UTILIDADES DE COMPOSICIÓN, BOTONES Y TIPOGRAFÍA
+           ========================================================================== */
+        .container {
+            width: 100%;
+            max-width: var(--container-max);
+            margin-inline: auto;
+            padding-inline: var(--container-pad);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            font-family: var(--font-condensed);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--blue-corporate);
+            margin-bottom: 0.65rem;
+        }
+
+        .eyebrow::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            background-color: var(--red-classic);
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.65rem, 4.5vw, 2.55rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.015em;
+            color: var(--navy-primary);
+        }
+
+        .section-lead {
+            font-size: clamp(1rem, 1.35vw, 1.18rem);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            max-width: 62ch;
+        }
+
+        /* Botones con área táctil mínima de 46px (estándar UX móvil >= 44px) */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            min-height: 46px;
+            font-family: var(--font-display);
+            font-size: 0.96rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            padding: 0.75rem 1.35rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid transparent;
+            transition: all var(--transition);
+            text-align: center;
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background-color: var(--navy-primary);
+            color: #FFFFFF;
+            border-color: var(--navy-primary);
+        }
+        .btn-primary:hover {
+            background-color: var(--blue-corporate);
+            border-color: var(--blue-corporate);
+        }
+
+        .btn-outline {
+            background-color: var(--bg-paper);
+            color: var(--navy-primary);
+            border-color: var(--border-strong);
+        }
+        .btn-outline:hover {
+            border-color: var(--navy-primary);
+            background-color: rgba(23, 58, 94, 0.04);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #FFFFFF;
+            border-color: var(--whatsapp-green);
+        }
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            border-color: var(--whatsapp-hover);
+        }
+
+        /* ==========================================================================
+           4. BARRA SUPERIOR Y CABECERA (OPTIMIZADA EN MÓVIL Y ESCRITORIO)
+           ========================================================================== */
+        /* En móvil ocultamos la barra superior para no consumir altura en el primer pantallazo.
+           Los datos siguen accesibles en el menú desplegable, sección contacto y barra inferior. */
+        .topbar {
+            display: none;
+            background-color: var(--navy-deep);
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 0.83rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .topbar {
+                display: block;
+            }
+        }
+
+        .topbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-block: 0.45rem;
+            gap: 1rem;
+        }
+
+        .topbar-info {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .topbar-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            white-space: nowrap;
+        }
+
+        .topbar-item svg {
+            width: 14px;
+            height: 14px;
+            color: #E07A7A;
+            flex-shrink: 0;
+        }
+
+        .topbar-link:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* Cabecera Principal */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(250, 249, 246, 0.97);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 3.85rem; /* Compacto en móvil (61.6px) */
+            gap: 0.75rem;
+        }
+
+        @media (min-width: 1080px) {
+            .header-inner {
+                min-height: 4.75rem;
+                gap: 1.25rem;
+            }
+        }
+
+        /* Logotipo conceptual */
+        .brand-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .brand-emblem {
+            width: 44px;
+            height: 36px;
+            flex-shrink: 0;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(23, 58, 94, 0.16);
+        }
+
+        @media (min-width: 768px) {
+            .brand-logo {
+                gap: 0.85rem;
+            }
+            .brand-emblem {
+                width: 52px;
+                height: 42px;
+            }
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-family: var(--font-display);
+            font-size: clamp(1.02rem, 2.5vw, 1.2rem);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: var(--navy-primary);
+            line-height: 1.1;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .brand-sub {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            letter-spacing: 0.03em;
+            margin-top: 0.12rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        /* Navegación Escritorio (Con white-space: nowrap y breakpoint 1080px para evitar saltos de línea) */
+        .main-nav {
+            display: none;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: clamp(1.1rem, 1.6vw, 1.65rem);
+        }
+
+        .nav-link {
+            font-family: var(--font-display);
+            font-size: 0.93rem;
+            font-weight: 500;
+            color: var(--text-main);
+            padding-block: 0.35rem;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--red-classic);
+            transition: width var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--navy-primary);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .header-cta {
+            display: none;
+            flex-shrink: 0;
+        }
+
+        .header-cta .btn {
+            min-height: 40px;
+            padding: 0.55rem 1.05rem;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        /* Botón menú móvil (Área táctil >= 44px) */
+        .menu-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            min-height: 44px;
+            padding: 0.45rem 0.75rem;
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-display);
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: var(--navy-primary);
+            background-color: var(--bg-paper);
+            flex-shrink: 0;
+        }
+
+        .menu-toggle svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Menú desplegable móvil */
+        .mobile-nav {
+            display: none;
+            background-color: var(--bg-paper);
+            border-bottom: 2px solid var(--navy-primary);
+            padding: 0.75rem var(--container-pad) 1.5rem;
+            box-shadow: 0 12px 24px rgba(18, 46, 75, 0.12);
+        }
+
+        .mobile-nav.is-open {
+            display: block;
+        }
+
+        .mobile-nav-list {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .mobile-nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 46px;
+            padding: 0.65rem 0.25rem;
+            font-family: var(--font-display);
+            font-size: 1.02rem;
+            font-weight: 600;
+            color: var(--navy-primary);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .mobile-nav-meta {
+            margin-top: 1rem;
+            padding: 0.85rem;
+            background-color: var(--bg-warm);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: grid;
+            gap: 0.35rem;
+        }
+
+        .mobile-nav-actions {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.65rem;
+        }
+
+        @media (max-width: 359px) {
+            .mobile-nav-actions {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 1080px) {
+            .main-nav {
+                display: block;
+            }
+            .header-cta {
+                display: block;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            .mobile-nav {
+                display: none !important;
+            }
+        }
+
+        /* ==========================================================================
+           5. SECCIÓN 2 — HERO PRINCIPAL (MOBILE-FIRST CALIBRADO PARA 390×844)
+           ========================================================================== */
+        .hero {
+            padding-block: 1.5rem 2.75rem;
+            border-bottom: 1px solid var(--border-light);
+            background: linear-gradient(180deg, var(--bg-paper) 0%, var(--bg-warm) 100%);
+        }
+
+        @media (min-width: 960px) {
+            .hero {
+                padding-block: clamp(3rem, 5vw, 4.75rem);
+            }
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        @media (min-width: 960px) {
+            .hero-grid {
+                grid-template-columns: 1.08fr 0.92fr;
+                gap: 3.5rem;
+            }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.05rem, 6.5vw, 3.6rem);
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: -0.02em;
+            color: var(--navy-primary);
+            margin-bottom: 0.85rem;
+        }
+
+        .hero-title span {
+            color: var(--blue-corporate);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.35vw, 1.2rem);
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 1.35rem;
+            max-width: 54ch;
+        }
+
+        @media (min-width: 960px) {
+            .hero-title {
+                margin-bottom: 1.15rem;
+            }
+            .hero-subtitle {
+                line-height: 1.65;
+                margin-bottom: 1.85rem;
+            }
+        }
+
+        /* En móvil los botones aprovechan el ancho de forma limpia */
+        .hero-actions {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.65rem;
+            margin-bottom: 1.35rem;
+        }
+
+        @media (min-width: 420px) {
+            .hero-actions {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .hero-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.875rem;
+                margin-bottom: 1.85rem;
+            }
+        }
+
+        .hero-footnote {
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            font-family: var(--font-editorial);
+        }
+
+        .hero-footnote::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: var(--red-classic);
+            margin-top: 0.48rem;
+            flex-shrink: 0;
+        }
+
+        /* Marco fotográfico del Hero (16/10 en móvil para ver imagen en 1ª pantalla, 4/3 en escritorio) */
+        .hero-visual {
+            position: relative;
+        }
+
+        .photo-frame {
+            position: relative;
+            background-color: var(--bg-paper);
+            padding: 0.45rem;
+            border: 1px solid var(--border-strong);
+            box-shadow: var(--shadow-card);
+        }
+
+        @media (min-width: 768px) {
+            .photo-frame {
+                padding: 0.65rem;
+            }
+        }
+
+        .photo-frame::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 36%;
+            height: 36%;
+            border-top: 3px solid var(--red-classic);
+            border-right: 3px solid var(--red-classic);
+            pointer-events: none;
+        }
+
+        .hero-img-wrap {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+            background-color: var(--navy-primary);
+        }
+
+        @media (min-width: 960px) {
+            .hero-img-wrap {
+                aspect-ratio: 4 / 3;
+            }
+        }
+
+        .hero-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .photo-caption {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            padding: 0.5rem 0.25rem 0.1rem;
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            font-family: var(--font-sans);
+        }
+
+        .photo-caption-tag {
+            font-family: var(--font-condensed);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--navy-primary);
+            font-weight: 600;
+        }
+
+        /* ==========================================================================
+           6. SECCIÓN 3 — NUESTRA FILOSOFÍA (ORDEN EDITORIAL EN MÓVIL Y ESCRITORIO)
+           ========================================================================== */
+        .philosophy {
+            padding-block: var(--section-py);
+            background-color: var(--bg-warm);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .philosophy-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.25rem;
+            align-items: start;
+        }
+
+        /* En móvil mostramos primero el titular y la explicación principal (.philosophy-body)
+           y a continuación el bloque editorial destacado con la fotografía (.philosophy-aside).
+           En escritorio mantenemos las dos columnas originales (aside a la izquierda, body a la derecha). */
+        .philosophy-body {
+            order: 1;
+        }
+        .philosophy-aside {
+            order: 2;
+        }
+
+        @media (min-width: 960px) {
+            .philosophy-layout {
+                grid-template-columns: 5fr 7fr;
+                gap: 4rem;
+            }
+            .philosophy-aside {
+                order: 1;
+            }
+            .philosophy-body {
+                order: 2;
+            }
+        }
+
+        .editorial-card {
+            background-color: var(--navy-primary);
+            color: #FFFFFF;
+            padding: 1.5rem;
+            border-top: 4px solid var(--red-classic);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        @media (min-width: 768px) {
+            .editorial-card {
+                padding: 2.25rem;
+            }
+        }
+
+        .editorial-card-label {
+            font-family: var(--font-condensed);
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.72);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .editorial-quote {
+            font-family: var(--font-editorial);
+            font-size: clamp(1.28rem, 2.2vw, 1.62rem);
+            line-height: 1.36;
+            font-weight: 400;
+            font-style: italic;
+            color: #FFFFFF;
+            margin-bottom: 1.15rem;
+        }
+
+        .editorial-meta {
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.16);
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.84);
+            line-height: 1.5;
+        }
+
+        .philosophy-secondary-img {
+            margin-top: 1.15rem;
+            border: 1px solid var(--border-strong);
+            background-color: var(--bg-paper);
+            padding: 0.45rem;
+        }
+
+        .philosophy-secondary-img img {
+            aspect-ratio: 16 / 10;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .philosophy-prose {
+            margin-top: 1.15rem;
+            display: grid;
+            gap: 1rem;
+            font-size: 1.03rem;
+            color: var(--text-main);
+            line-height: 1.68;
+        }
+
+        .philosophy-prose p strong {
+            color: var(--navy-primary);
+            font-weight: 600;
+        }
+
+        .philosophy-pillars {
+            margin-top: 1.75rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-strong);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.1rem;
+        }
+
+        @media (min-width: 600px) {
+            .philosophy-pillars {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .pillar-item {
+            padding-left: 0.9rem;
+            border-left: 2px solid var(--red-classic);
+        }
+
+        .pillar-title {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy-primary);
+            margin-bottom: 0.2rem;
+        }
+
+        .pillar-desc {
+            font-size: 0.91rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* ==========================================================================
+           7. SECCIÓN 4 — ¿POR QUÉ ELEGIRNOS? (LECTURA RÁPIDA EN MÓVIL)
+           ========================================================================== */
+        .reasons {
+            padding-block: var(--section-py);
+            background-color: var(--bg-paper);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .reasons-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.75rem;
+            padding-bottom: 1.35rem;
+            border-bottom: 2px solid var(--navy-primary);
+        }
+
+        @media (min-width: 860px) {
+            .reasons-header {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 3.25rem;
+            }
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 860px) {
+            .reasons-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .reason-col {
+            padding: 1.4rem 0;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .reason-col:first-child {
+            padding-top: 0.25rem;
+        }
+
+        .reason-col:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        @media (min-width: 860px) {
+            .reason-col,
+            .reason-col:first-child,
+            .reason-col:last-child {
+                padding: 0.5rem 2.25rem 0.5rem 0;
+                border-bottom: none;
+                border-right: 1px solid var(--border-light);
+            }
+            .reason-col:nth-child(2) {
+                padding-inline: 2.25rem;
+            }
+            .reason-col:last-child {
+                padding-left: 2.25rem;
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+
+        .reason-num {
+            font-family: var(--font-condensed);
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+            color: var(--red-classic);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        @media (min-width: 860px) {
+            .reason-num {
+                font-size: 2.45rem;
+                margin-bottom: 1.15rem;
+            }
+        }
+
+        .reason-num::after {
+            content: "";
+            height: 1px;
+            flex-grow: 1;
+            background-color: var(--border-light);
+        }
+
+        .reason-title {
+            font-family: var(--font-display);
+            font-size: 1.18rem;
+            font-weight: 700;
+            color: var(--navy-primary);
+            letter-spacing: 0.01em;
+            margin-bottom: 0.55rem;
+            text-transform: uppercase;
+        }
+
+        .reason-text {
+            font-size: 0.98rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .reason-note {
+            margin-top: 0.9rem;
+            padding-top: 0.7rem;
+            border-top: 1px dashed var(--border-strong);
+            font-size: 0.81rem;
+            color: var(--text-muted);
+        }
+
+        /* ==========================================================================
+           8. SECCIÓN 5 — CÓMO PREPARAMOS TU CARNET (CORRECCIÓN CRÍTICA STICKY)
+           ========================================================================== */
+        .process {
+            padding-block: var(--section-py);
+            background-color: var(--bg-stone);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .process-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+        }
+
+        /* FLUJO ESTÁTICO POR DEFECTO: Cero superposiciones en móvil y tablet */
+        .process-intro {
+            position: static;
+            top: auto;
+        }
+
+        /* En escritorio con anchura y altura suficientes se permite el acompañamiento lateral */
+        @media (min-width: 960px) {
+            .process-wrapper {
+                grid-template-columns: 4.5fr 7.5fr;
+                gap: 3.5rem;
+                align-items: start;
+            }
+        }
+
+        @media (min-width: 960px) and (min-height: 720px) {
+            .process-intro {
+                position: sticky;
+                top: 6rem;
+            }
+        }
+
+        .process-photo {
+            margin-top: 1.35rem;
+            background: var(--bg-paper);
+            padding: 0.45rem;
+            border: 1px solid var(--border-strong);
+        }
+
+        .process-photo img {
+            aspect-ratio: 16 / 10;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media (min-width: 960px) {
+            .process-photo {
+                margin-top: 1.85rem;
+                padding: 0.55rem;
+            }
+            .process-photo img {
+                aspect-ratio: 3 / 2;
+            }
+        }
+
+        .steps-list {
+            background-color: var(--bg-paper);
+            border: 1px solid var(--border-strong);
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-item {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.55rem;
+            padding: 1.25rem 1.15rem;
+            border-bottom: 1px solid var(--border-light);
+            align-items: start;
+        }
+
+        @media (min-width: 520px) {
+            .step-item {
+                grid-template-columns: auto 1fr;
+                gap: 1.15rem;
+                padding: 1.45rem 1.5rem;
+            }
+        }
+
+        .step-item:last-child {
+            border-bottom: none;
+        }
+
+        .step-badge {
+            display: inline-block;
+            justify-self: start;
+            font-family: var(--font-condensed);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: var(--navy-primary);
+            padding: 0.28rem 0.65rem;
+            border-radius: 2px;
+            min-width: 4.4rem;
+            text-align: center;
+        }
+
+        .step-item:last-child .step-badge {
+            background-color: var(--red-classic);
+        }
+
+        .step-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.12rem;
+            font-weight: 700;
+            color: var(--navy-primary);
+            margin-bottom: 0.25rem;
+            line-height: 1.25;
+        }
+
+        .step-content p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* ==========================================================================
+           9. SECCIÓN 6 — TARIFAS (TARJETAS COMPACTAS Y CLARAS EN MÓVIL)
+           ========================================================================== */
+        .pricing {
+            padding-block: var(--section-py);
+            background-color: var(--bg-warm);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .pricing-header {
+            max-width: 720px;
+            margin-bottom: 1.35rem;
+        }
+
+        /* Aviso obligatorio de precios de ejemplo */
+        .prototype-pricing-notice {
+            background-color: #FFFDF7;
+            border: 1px solid #D9C398;
+            border-left: 5px solid var(--red-classic);
+            padding: 1rem 1.15rem;
+            margin-bottom: 1.65rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        @media (min-width: 768px) {
+            .prototype-pricing-notice {
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 2.25rem;
+            }
+        }
+
+        .notice-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-family: var(--font-condensed);
+            font-size: 0.86rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--red-classic);
+        }
+
+        .notice-text {
+            font-size: 0.92rem;
+            color: var(--text-main);
+            font-weight: 500;
+            line-height: 1.45;
+        }
+
+        /* Cuadrícula de tarifario */
+        .tariff-ledger {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 860px) {
+            .tariff-ledger {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .tariff-box {
+            background-color: var(--bg-paper);
+            border: 1px solid var(--border-strong);
+            padding: 1.35rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        @media (min-width: 860px) {
+            .tariff-box {
+                padding: 2rem 1.75rem;
+            }
+        }
+
+        .tariff-box--featured {
+            border-top: 4px solid var(--navy-primary);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        /* Cabecera de tarjeta compacta en móvil: título e importe visibles de inmediato */
+        .tariff-top-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-bottom: 0.85rem;
+            margin-bottom: 0.85rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        @media (min-width: 860px) {
+            .tariff-top-row {
+                display: block;
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+
+        .tariff-category {
+            font-family: var(--font-condensed);
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .tariff-name {
+            font-family: var(--font-display);
+            font-size: 1.28rem;
+            font-weight: 700;
+            color: var(--navy-primary);
+            line-height: 1.2;
+        }
+
+        @media (min-width: 860px) {
+            .tariff-name {
+                font-size: 1.35rem;
+                margin-bottom: 1.15rem;
+                padding-bottom: 0.95rem;
+                border-bottom: 1px solid var(--border-light);
+            }
+        }
+
+        .tariff-amount-wrap {
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 860px) {
+            .tariff-amount-wrap {
+                text-align: left;
+                margin-bottom: 1.15rem;
+            }
+        }
+
+        .tariff-amount {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 2.85rem);
+            font-weight: 700;
+            color: var(--navy-primary);
+            line-height: 1;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+
+        .tariff-sample-tag {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.74rem;
+            color: var(--red-classic);
+            font-weight: 600;
+        }
+
+        .tariff-desc {
+            font-size: 0.94rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 1.1rem;
+        }
+
+        @media (min-width: 860px) {
+            .tariff-desc {
+                margin-bottom: 1.65rem;
+            }
+        }
+
+        .tariff-footer {
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.81rem;
+            color: var(--text-muted);
+        }
+
+        /* Bloque explicativo inferior */
+        .pricing-explanation {
+            background-color: var(--blue-tint);
+            border: 1px solid #C9D8E6;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 780px) {
+            .pricing-explanation {
+                padding: 1.5rem 1.75rem;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .pricing-explanation p {
+            font-size: 0.96rem;
+            color: var(--navy-primary);
+            max-width: 62ch;
+            line-height: 1.55;
+        }
+
+        /* ==========================================================================
+           10. SECCIÓN 7 — OPINIONES REALES (RESÚMENES EDITORIALES VERIFICABLES)
+           ========================================================================== */
+        .reviews {
+            padding-block: var(--section-py);
+            background-color: var(--bg-paper);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .reviews-top {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 820px) {
+            .reviews-top {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 2.75rem;
+            }
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 820px) {
+            .reviews-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .review-card {
+            background-color: var(--bg-warm);
+            border: 1px solid var(--border-strong);
+            border-top: 3px solid var(--navy-primary);
+            padding: 1.5rem 1.35rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 768px) {
+            .review-card {
+                padding: 2rem 2.25rem;
+            }
+        }
+
+        .review-editorial-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            font-family: var(--font-condensed);
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--red-classic);
+            margin-bottom: 0.75rem;
+        }
+
+        .review-body {
+            font-family: var(--font-editorial);
+            font-size: 1.05rem;
+            line-height: 1.65;
+            color: var(--text-main);
+            margin-bottom: 1.35rem;
+        }
+
+        .review-author {
+            padding-top: 0.95rem;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .author-name {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 0.96rem;
+            color: var(--navy-primary);
+        }
+
+        .author-source {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: 0.1rem;
+        }
+
+        .review-tag {
+            font-family: var(--font-condensed);
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 0.22rem 0.55rem;
+            background-color: var(--blue-tint);
+            color: var(--navy-primary);
+            font-weight: 600;
+        }
+
+        .reviews-summary-band {
+            margin-top: 1.5rem;
+            padding: 1.1rem 1.25rem;
+            background-color: var(--bg-stone);
+            border-left: 3px solid var(--navy-primary);
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+
+        /* ==========================================================================
+           11. SECCIÓN 8 — PREGUNTAS FRECUENTES (ACORDEÓN TÁCTIL CÓMODO)
+           ========================================================================== */
+        .faq {
+            padding-block: var(--section-py);
+            background-color: var(--bg-warm);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .faq-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+        }
+
+        @media (min-width: 920px) {
+            .faq-layout {
+                grid-template-columns: 4fr 8fr;
+                gap: 3.5rem;
+            }
+        }
+
+        .accordion {
+            border-top: 2px solid var(--navy-primary);
+            background-color: var(--bg-paper);
+            border-inline: 1px solid var(--border-light);
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .accordion-trigger {
+            width: 100%;
+            min-height: 54px;
+            text-align: left;
+            padding: 1rem 1.15rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            font-family: var(--font-display);
+            font-size: 1.02rem;
+            font-weight: 600;
+            color: var(--navy-primary);
+            line-height: 1.3;
+            transition: background-color var(--transition);
+        }
+
+        @media (min-width: 768px) {
+            .accordion-trigger {
+                padding: 1.2rem 1.5rem;
+                font-size: 1.06rem;
+            }
+        }
+
+        .accordion-trigger:hover {
+            background-color: rgba(23, 58, 94, 0.025);
+        }
+
+        .accordion-icon {
+            width: 26px;
+            height: 26px;
+            border: 1px solid var(--border-strong);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--red-classic);
+            font-size: 1.1rem;
+            line-height: 1;
+            transition: transform var(--transition), background-color var(--transition);
+        }
+
+        .accordion-trigger[aria-expanded="true"] .accordion-icon {
+            transform: rotate(45deg);
+            background-color: var(--red-classic);
+            border-color: var(--red-classic);
+            color: #FFFFFF;
+        }
+
+        .accordion-panel {
+            padding: 0 1.15rem 1.2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .accordion-panel {
+                padding: 0 1.5rem 1.35rem;
+            }
+        }
+
+        .accordion-panel[hidden] {
+            display: none;
+        }
+
+        /* ==========================================================================
+           12. SECCIÓN 9 — CONTACTO Y UBICACIÓN (MAPA PRECISO Y ACCIÓN DIRECTA)
+           ========================================================================== */
+        .contact {
+            padding-block: var(--section-py);
+            background-color: var(--bg-paper);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+            align-items: stretch;
+        }
+
+        @media (min-width: 920px) {
+            .contact-grid {
+                grid-template-columns: 5.5fr 6.5fr;
+                gap: 3rem;
+            }
+        }
+
+        .contact-info-box {
+            background-color: var(--bg-warm);
+            border: 1px solid var(--border-strong);
+            padding: 1.5rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 768px) {
+            .contact-info-box {
+                padding: 2.25rem;
+            }
+        }
+
+        .contact-notice {
+            background-color: var(--blue-tint);
+            border-left: 3px solid var(--blue-corporate);
+            padding: 0.9rem 1.05rem;
+            font-size: 0.93rem;
+            color: var(--navy-primary);
+            margin-block: 1.25rem;
+            line-height: 1.55;
+        }
+
+        .contact-details-list {
+            display: grid;
+            gap: 1.15rem;
+            margin-bottom: 1.65rem;
+        }
+
+        .contact-detail-row {
+            display: grid;
+            grid-template-columns: 22px 1fr;
+            gap: 0.75rem;
+            align-items: start;
+        }
+
+        .contact-detail-row svg {
+            width: 20px;
+            height: 20px;
+            color: var(--red-classic);
+            margin-top: 0.15rem;
+        }
+
+        .detail-label {
+            font-family: var(--font-condensed);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .detail-value {
+            font-family: var(--font-display);
+            font-size: 1.06rem;
+            font-weight: 600;
+            color: var(--navy-primary);
+            line-height: 1.35;
+        }
+
+        .detail-value a:hover {
+            color: var(--red-classic);
+            text-decoration: underline;
+        }
+
+        .contact-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.65rem;
+        }
+
+        @media (min-width: 480px) {
+            .contact-buttons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Contenedor de Mapa embebido apuntando exactamente a la dirección postal */
+        .map-column {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border-strong);
+            background-color: var(--bg-warm);
+            overflow: hidden;
+        }
+
+        .map-frame-wrap {
+            position: relative;
+            flex-grow: 1;
+            min-height: 260px;
+            background-color: #E5E3DF;
+        }
+
+        @media (min-width: 768px) {
+            .map-frame-wrap {
+                min-height: 330px;
+            }
+        }
+
+        .map-frame-wrap iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 260px;
+            border: 0;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .map-frame-wrap iframe {
+                min-height: 330px;
+            }
+        }
+
+        .facade-reference-bar {
+            padding: 0.9rem 1.15rem;
+            background-color: var(--bg-paper);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            font-size: 0.84rem;
+            color: var(--text-secondary);
+        }
+
+        .facade-reference-bar a {
+            font-weight: 600;
+            color: var(--blue-corporate);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ==========================================================================
+           13. PIE DE PÁGINA Y BARRA MÓVIL DISCRETA
+           ========================================================================== */
+        .site-footer {
+            background-color: var(--navy-deep);
+            color: rgba(255, 255, 255, 0.78);
+            padding-block: 3rem 2.5rem;
+            font-size: 0.88rem;
+        }
+
+        @media (min-width: 768px) {
+            .site-footer {
+                padding-block: 3.5rem;
+            }
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.75rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        @media (min-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1.5fr 1fr 1fr;
+                gap: 2rem;
+                padding-bottom: 2.5rem;
+            }
+        }
+
+        .footer-title {
+            font-family: var(--font-display);
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links {
+            display: grid;
+            gap: 0.45rem;
+        }
+
+        .footer-links a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            padding-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (min-width: 768px) {
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .prototype-disclaimer {
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 0.65rem 0.9rem;
+            border-radius: var(--radius-sm);
+            color: rgba(255, 255, 255, 0.78);
+            line-height: 1.45;
+        }
+
+        /* Barra fija inferior en móvil (Con safe-area y sin tapar el footer gracias al padding del body) */
+        .mobile-QuickBar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 90;
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid var(--border-strong);
+            box-shadow: 0 -4px 16px rgba(23, 58, 94, 0.08);
+            padding: 0.5rem var(--container-pad) calc(0.5rem + env(safe-area-inset-bottom, 0px));
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 0.55rem;
+        }
+
+        .mobile-QuickBar .btn {
+            min-height: 44px;
+            padding: 0.55rem 0.65rem;
+            font-size: 0.86rem;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-QuickBar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- BARRA INSTITUCIONAL SUPERIOR (Visible en tablet/escritorio para despejar el primer pantallazo móvil) -->
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <div class="topbar-info">
+                <span class="topbar-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Passatge de les Delícies, 9 · 08940 Cornellà de Llobregat
+                </span>
+                <a href="tel:+34933779057" class="topbar-item topbar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    933 77 90 57
+                </a>
+            </div>
+            <div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat" target="_blank" rel="noopener noreferrer" class="topbar-link">
+                    Ver ubicación en Google Maps →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 1 — HEADER -->
+    <header class="site-header" id="inicio">
+        <div class="container header-inner">
+            <!-- Logotipo conceptual (Coche clásico rojo sobre fondo azul corporativo) -->
+            <a href="#inicio" class="brand-logo" aria-label="Autoescuela Javier - Inicio">
+                <svg class="brand-emblem" viewBox="0 0 64 52" role="img" aria-label="Emblema conceptual Autoescuela Javier: silueta de automóvil rojo sobre fondo azul">
+                    <rect width="64" height="52" rx="4" fill="#173A5E"/>
+                    <rect x="3" y="3" width="58" height="46" rx="2.5" fill="none" stroke="#285D8A" stroke-width="1.2"/>
+                    <line x1="10" y1="39" x2="54" y2="39" stroke="#FAF9F6" stroke-width="1.5" stroke-opacity="0.35"/>
+                    <path d="M13 32 L16 25 C17.5 21.5 20.5 19.5 24.5 19.5 L38.5 19.5 C42.5 19.5 45.2 21.5 47 25 L51 27.5 C52.8 28.5 53.5 30 53.5 32 L53.5 34.5 C53.5 35.3 52.8 36 52 36 L12.5 36 C11.7 36 11 35.3 11 34.5 L11 33.5 C11 32.6 11.8 32 13 32 Z" fill="#BC4141"/>
+                    <path d="M25 21.8 L31.5 21.8 L31.5 26.8 L19.5 26.8 L22 23 C22.7 22.1 23.8 21.8 25 21.8 Z" fill="#FAF9F6" fill-opacity="0.9"/>
+                    <path d="M33.5 21.8 L38.2 21.8 C40.5 21.8 42.2 22.8 43.5 25 L44.4 26.8 L33.5 26.8 Z" fill="#FAF9F6" fill-opacity="0.9"/>
+                    <circle cx="21" cy="35.5" r="4.5" fill="#122E4B" stroke="#FAF9F6" stroke-width="1.5"/>
+                    <circle cx="43.5" cy="35.5" r="4.5" fill="#122E4B" stroke="#FAF9F6" stroke-width="1.5"/>
+                </svg>
+                <div class="brand-text">
+                    <span class="brand-name">Autoescuela Javier</span>
+                    <span class="brand-sub">Cornellà de Llobregat</span>
+                </div>
+            </a>
+
+            <!-- Navegación Escritorio -->
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#nuestra-autoescuela" class="nav-link">Nuestra autoescuela</a></li>
+                    <li><a href="#como-ensenamos" class="nav-link">Cómo enseñamos</a></li>
+                    <li><a href="#tarifas" class="nav-link">Tarifas</a></li>
+                    <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón discreto en escritorio -->
+            <div class="header-cta">
+                <a href="#contacto" class="btn btn-primary js-contact-trigger">Consultar información</a>
+            </div>
+
+            <!-- Botón menú móvil -->
+            <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+                <span>Menú</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menú Móvil Desplegable (Incluye dirección y teléfono directo) -->
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+            <ul class="mobile-nav-list">
+                <li><a href="#inicio" class="mobile-nav-link"><span>Inicio</span><span>→</span></a></li>
+                <li><a href="#nuestra-autoescuela" class="mobile-nav-link"><span>Nuestra autoescuela</span><span>→</span></a></li>
+                <li><a href="#como-ensenamos" class="mobile-nav-link"><span>Cómo enseñamos</span><span>→</span></a></li>
+                <li><a href="#tarifas" class="mobile-nav-link"><span>Tarifas</span><span>→</span></a></li>
+                <li><a href="#opiniones" class="mobile-nav-link"><span>Opiniones</span><span>→</span></a></li>
+                <li><a href="#contacto" class="mobile-nav-link"><span>Contacto y ubicación</span><span>→</span></a></li>
+            </ul>
+            <div class="mobile-nav-meta">
+                <strong>Passatge de les Delícies, 9 · 08940 Cornellà de Llobregat</strong>
+                <span>Teléfono del centro: 933 77 90 57</span>
+            </div>
+            <div class="mobile-nav-actions">
+                <a href="#tarifas" class="btn btn-outline">Ver tarifas</a>
+                <a href="tel:+34933779057" class="btn btn-primary">Llamar ahora</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+
+        <!-- SECCIÓN 2 — HERO PRINCIPAL -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">Autoescuela Javier · Cornellà de Llobregat</span>
+                    <h1 class="hero-title">Aprende a conducir <span>de verdad.</span></h1>
+                    <p class="hero-subtitle">
+                        En Autoescuela Javier te enseñamos con paciencia, experiencia y las cosas claras. Corregimos cada detalle para que ganes seguridad al volante y llegues preparado al examen.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#tarifas" class="btn btn-primary">Consulta nuestros precios</a>
+                        <a href="#nuestra-autoescuela" class="btn btn-outline">Conoce nuestra autoescuela</a>
+                    </div>
+                    <p class="hero-footnote">
+                        Una autoescuela de confianza, con un trato cercano y una enseñanza que se toma en serio.
+                    </p>
+                </div>
+
+                <div class="hero-visual">
+                    <figure class="photo-frame">
+                        <div class="hero-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80"
+                                 alt="Manos al volante durante una sesión de conducción en luz diurna"
+                                 width="800"
+                                 height="600"
+                                 fetchpriority="high">
+                        </div>
+                        <figcaption class="photo-caption">
+                            <span class="photo-caption-tag">Formación práctica · Permiso B</span>
+                            <span>Fotografía ilustrativa</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3 — NUESTRA FILOSOFÍA -->
+        <section class="philosophy" id="nuestra-autoescuela">
+            <div class="container philosophy-layout">
+                <aside class="philosophy-aside">
+                    <div class="editorial-card">
+                        <span class="editorial-card-label">Principio de la autoescuela</span>
+                        <p class="editorial-quote">
+                            Aprender a conducir bien, con profesores que te hablan claro.
+                        </p>
+                        <p class="editorial-meta">
+                            En la carretera no sirven los atajos. Preferimos explicarte con honestidad qué necesitas pulir antes que llevarte a examen sin la seguridad suficiente.
+                        </p>
+                    </div>
+
+                    <figure class="philosophy-secondary-img">
+                        <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=900&q=80"
+                             alt="Conducción desde el interior del vehículo prestando atención a la vía"
+                             width="640"
+                             height="400"
+                             loading="lazy">
+                        <figcaption class="photo-caption">
+                            <span class="photo-caption-tag">Atención al detalle</span>
+                            <span>Imagen ilustrativa</span>
+                        </figcaption>
+                    </figure>
+                </aside>
+
+                <div class="philosophy-body">
+                    <span class="eyebrow">Filosofía de trabajo</span>
+                    <h2 class="section-title">Enseñar bien también significa decirte la verdad.</h2>
+                    
+                    <div class="philosophy-prose">
+                        <p>
+                            Somos una autoescuela tradicional de barrio en Cornellà de Llobregat. Aquí no funcionamos como una franquicia impersonal: conocemos a cada alumno y nos implicamos en que aprenda a circular con solvencia.
+                        </p>
+                        <p>
+                            <strong>No todos aprendemos al mismo ritmo.</strong> Por eso, cada práctica es una oportunidad para corregir errores con calma, resolver dudas en el momento y ganar verdadera soltura en las maniobras y en el tráfico diario.
+                        </p>
+                        <p>
+                            <strong>Cuando todavía queda algo por mejorar, te lo decimos con claridad y respeto.</strong> Y cuando llega el momento de examinarte, queremos que vayas con una preparación sólida que evite presentaciones prematuras y gastos innecesarios.
+                        </p>
+                    </div>
+
+                    <div class="philosophy-pillars">
+                        <div class="pillar-item">
+                            <h3 class="pillar-title">Exigencia constructiva</h3>
+                            <p class="pillar-desc">Corregimos los hábitos al volante desde el primer día para que adquieras seguridad real, no solo para superar una prueba.</p>
+                        </div>
+                        <div class="pillar-item">
+                            <h3 class="pillar-title">Criterio profesional</h3>
+                            <p class="pillar-desc">Valoramos tu evolución con sinceridad para que sepas en todo momento qué llevas bien y qué te falta reforzar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4 — ¿POR QUÉ ELEGIRNOS? -->
+        <section class="reasons" aria-labelledby="titulo-ventajas">
+            <div class="container">
+                <div class="reasons-header">
+                    <div>
+                        <span class="eyebrow">El valor del oficio</span>
+                        <h2 class="section-title" id="titulo-ventajas">¿Por qué formarte con nosotros?</h2>
+                    </div>
+                    <p class="section-lead">
+                        Tres razones por las que vecinos de Cornellà confían en una autoescuela de toda la vida.
+                    </p>
+                </div>
+
+                <div class="reasons-grid">
+                    <article class="reason-col">
+                        <div>
+                            <div class="reason-num" aria-hidden="true">01</div>
+                            <h3 class="reason-title">Experiencia que se nota</h3>
+                            <p class="reason-text">
+                                Profesores experimentados que enseñan con criterio pedagógico, corrigen cada detalle de la conducción y transmiten tranquilidad y seguridad al volante.
+                            </p>
+                        </div>
+                        <p class="reason-note">
+                            Enseñanza centrada en la circulación segura y la anticipación en vía urbana e interurbana.
+                        </p>
+                    </article>
+
+                    <article class="reason-col">
+                        <div>
+                            <div class="reason-num" aria-hidden="true">02</div>
+                            <h3 class="reason-title">Trato personal y honesto</h3>
+                            <p class="reason-text">
+                                Seguimiento directo del alumno, explicaciones claras en cada maniobra y una valoración sincera sobre tus progresos antes de dar el paso al examen.
+                            </p>
+                        </div>
+                        <p class="reason-note">
+                            Un ambiente cercano y respetuoso donde preguntar cualquier duda con total confianza.
+                        </p>
+                    </article>
+
+                    <article class="reason-col">
+                        <div>
+                            <div class="reason-num" aria-hidden="true">03</div>
+                            <h3 class="reason-title">Precios competitivos y disponibilidad</h3>
+                            <p class="reason-text">
+                                Una opción accesible en Cornellà para aprender a conducir, con una organización de las clases prácticas pensada para procurar tiempos de espera razonables.
+                            </p>
+                        </div>
+                        <p class="reason-note">
+                            * La disponibilidad concreta de horarios y comienzo de prácticas debe consultarse directamente con la autoescuela.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5 — CÓMO PREPARAMOS TU CARNET (SIN STICKY EN MÓVIL · FLUJO VERTICAL LIMPIO) -->
+        <section class="process" id="como-ensenamos">
+            <div class="container process-wrapper">
+                <div class="process-intro">
+                    <span class="eyebrow">Proceso de aprendizaje</span>
+                    <h2 class="section-title">Cómo preparamos tu carnet paso a paso</h2>
+                    <p class="section-lead" style="margin-top: 0.75rem;">
+                        Un recorrido claro y ordenado para obtener el permiso B, adaptado al ritmo de cada alumno y sin promesas irreales.
+                    </p>
+
+                    <figure class="process-photo">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=900&q=80"
+                             alt="Detalle del volante y cuadro de mandos de un automóvil"
+                             width="600"
+                             height="400"
+                             loading="lazy">
+                        <figcaption class="photo-caption">
+                            <span class="photo-caption-tag">Dominio de los mandos</span>
+                            <span>Fotografía ilustrativa</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <ol class="steps-list">
+                    <li class="step-item">
+                        <span class="step-badge">Paso 01</span>
+                        <div class="step-content">
+                            <h3>Infórmate sobre las tarifas y la matrícula</h3>
+                            <p>Te detallamos con claridad el funcionamiento del curso, los precios de la formación, el coste de las prácticas y la documentación necesaria para abrir tu expediente.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-badge">Paso 02</span>
+                        <div class="step-content">
+                            <h3>Prepara el examen teórico</h3>
+                            <p>Asimila la normativa, la señalización y los principios de seguridad vial resolviendo todas las dudas que te surjan hasta estar preparado para la prueba teórica.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-badge">Paso 03</span>
+                        <div class="step-content">
+                            <h3>Comienza tus clases prácticas según disponibilidad</h3>
+                            <p>Una vez superada la fase teórica, organizamos el inicio de tus sesiones al volante buscando el horario que mejor encaje con tu disponibilidad y la agenda del centro.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-badge">Paso 04</span>
+                        <div class="step-content">
+                            <h3>Mejora tu conducción con las indicaciones del profesor</h3>
+                            <p>En cada clase trabajamos la observación, el manejo del cambio, las incorporaciones, el estacionamiento y la toma de decisiones corrigiendo los fallos sobre la marcha.</p>
+                        </div>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-badge">Paso 05</span>
+                        <div class="step-content">
+                            <h3>Valora con tu profesor cuándo estás preparado para examinarte</h3>
+                            <p>Analizamos juntos tu soltura real al volante para decidir el momento adecuado de acudir al examen práctico con garantías y tranquilidad.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6 — TARIFAS -->
+        <section class="pricing" id="tarifas">
+            <div class="container">
+                <div class="pricing-header">
+                    <span class="eyebrow">Transparencia en precios</span>
+                    <h2 class="section-title">Tarifas de formación</h2>
+                    <p class="section-lead" style="margin-top: 0.65rem;">
+                        Consulta de un vistazo nuestra estructura de precios antes de ponerte en contacto con nosotros.
+                    </p>
+                </div>
+
+                <!-- AVISO OBLIGATORIO DE PRECIOS SIMULADOS -->
+                <div class="prototype-pricing-notice" role="note" aria-label="Aviso sobre precios de ejemplo">
+                    <div class="notice-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        PRECIOS DE EJEMPLO — PENDIENTES DE CONFIRMACIÓN
+                    </div>
+                    <p class="notice-text">
+                        Estos importes son orientativos y se muestran únicamente para presentar el diseño de la web. Consulta las tarifas definitivas con la autoescuela.
+                    </p>
+                </div>
+
+                <!-- BLOQUES DE PRECIO ILUSTRATIVOS (Compactos en móvil, 3 columnas en escritorio) -->
+                <div class="tariff-ledger">
+                    <article class="tariff-box">
+                        <div>
+                            <div class="tariff-top-row">
+                                <div>
+                                    <div class="tariff-category">Inicio · Permiso B</div>
+                                    <h3 class="tariff-name">Matrícula y Teórica</h3>
+                                </div>
+                                <div class="tariff-amount-wrap">
+                                    <div class="tariff-amount">150 €</div>
+                                    <span class="tariff-sample-tag">Importe de ejemplo</span>
+                                </div>
+                            </div>
+                            <p class="tariff-desc">
+                                Inscripción en el centro y preparación para el examen teórico. Consulta en secretaría el detalle de los materiales y servicios incluidos en la matrícula actual.
+                            </p>
+                        </div>
+                        <div class="tariff-footer">
+                            Condiciones pendientes de confirmación en el centro.
+                        </div>
+                    </article>
+
+                    <article class="tariff-box tariff-box--featured">
+                        <div>
+                            <div class="tariff-top-row">
+                                <div>
+                                    <div class="tariff-category">Conducción · Individual</div>
+                                    <h3 class="tariff-name">Clase Práctica</h3>
+                                </div>
+                                <div class="tariff-amount-wrap">
+                                    <div class="tariff-amount">29 €</div>
+                                    <span class="tariff-sample-tag">Importe de ejemplo</span>
+                                </div>
+                            </div>
+                            <p class="tariff-desc">
+                                Sesión práctica individual de conducción acompañada por el profesor. Enfocada en corregir errores, practicar maniobras y ganar seguridad en circulación real.
+                            </p>
+                        </div>
+                        <div class="tariff-footer">
+                            Duración y horarios a consultar con la autoescuela.
+                        </div>
+                    </article>
+
+                    <article class="tariff-box">
+                        <div>
+                            <div class="tariff-top-row">
+                                <div>
+                                    <div class="tariff-category">Conducción · Pack</div>
+                                    <h3 class="tariff-name">Bono 10 Prácticas</h3>
+                                </div>
+                                <div class="tariff-amount-wrap">
+                                    <div class="tariff-amount">275 €</div>
+                                    <span class="tariff-sample-tag">Importe de ejemplo</span>
+                                </div>
+                            </div>
+                            <p class="tariff-desc">
+                                Opción de bono conjunto de diez sesiones prácticas para realizar un seguimiento continuado de tu aprendizaje al volante.
+                            </p>
+                        </div>
+                        <div class="tariff-footer">
+                            Disponibilidad de bonos pendiente de confirmación.
+                        </div>
+                    </article>
+                </div>
+
+                <!-- BLOQUE EXPLICATIVO INFERIOR -->
+                <div class="pricing-explanation">
+                    <p>
+                        <strong>Información clara desde el primer día:</strong> Antes de matricularte, te explicaremos el coste de la formación, las prácticas y los gastos administrativos que correspondan.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary js-contact-trigger">Consultar tarifas actuales</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7 — OPINIONES REALES (RESÚMENES EDITORIALES CLARAMENTE DIFERENCIADOS DE CITAS LITERALES) -->
+        <section class="reviews" id="opiniones">
+            <div class="container">
+                <div class="reviews-top">
+                    <div>
+                        <span class="eyebrow">Valoraciones de alumnos</span>
+                        <h2 class="section-title">Opiniones sobre Autoescuela Javier</h2>
+                        <p class="section-lead" style="margin-top: 0.65rem;">
+                            Síntesis de los aspectos que más destacan los alumnos en las reseñas públicas del establecimiento en Cornellà.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-outline">
+                            Leer opiniones en Google →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reviews-grid">
+                    <!-- Resumen editorial 1 -->
+                    <article class="review-card">
+                        <div>
+                            <span class="review-editorial-kicker">Resumen de reseña pública</span>
+                            <p class="review-body">
+                                En las valoraciones publicadas en la ficha del negocio, antiguos alumnos como <strong>Isa Ruelti</strong> destacan la dedicación y profesionalidad de Javier, poniendo en valor su vocación por enseñar, la paciencia en cada explicación y el trato cercano y familiar durante el aprendizaje.
+                            </p>
+                        </div>
+                        <footer class="review-author">
+                            <div>
+                                <span class="author-name">Referencia: Isa Ruelti</span>
+                                <span class="author-source">Síntesis de reseña pública en Google · No es cita textual</span>
+                            </div>
+                            <span class="review-tag">Trato y vocación</span>
+                        </footer>
+                    </article>
+
+                    <!-- Resumen editorial 2 -->
+                    <article class="review-card">
+                        <div>
+                            <span class="review-editorial-kicker">Resumen de reseña pública</span>
+                            <p class="review-body">
+                                Asimismo, reseñas públicas como la de <strong>Furqan Nayyar</strong> subrayan el nivel de preparación práctica, la claridad con la que el profesor corrige cada detalle de la conducción y la seguridad real al volante con la que el alumno acude al examen.
+                            </p>
+                        </div>
+                        <footer class="review-author">
+                            <div>
+                                <span class="author-name">Referencia: Furqan Nayyar</span>
+                                <span class="author-source">Síntesis de reseña pública en Google · No es cita textual</span>
+                            </div>
+                            <span class="review-tag">Preparación real</span>
+                        </footer>
+                    </article>
+                </div>
+
+                <div class="reviews-summary-band">
+                    <span>
+                        Puedes leer el texto literal de todas las reseñas escritas por los alumnos directamente en la ficha oficial de Google Maps.
+                    </span>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="font-weight: 700; color: var(--navy-primary); text-decoration: underline;">
+                        Ver reseñas originales en Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 8 — PREGUNTAS FRECUENTES -->
+        <section class="faq" id="preguntas-frecuentes">
+            <div class="container faq-layout">
+                <div>
+                    <span class="eyebrow">Resolvemos tus dudas</span>
+                    <h2 class="section-title">Preguntas frecuentes</h2>
+                    <p class="section-lead" style="margin-top: 0.65rem;">
+                        Respuestas claras a las consultas más habituales antes de acercarte a la autoescuela o llamarnos por teléfono.
+                    </p>
+                </div>
+
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="true" aria-controls="faq-panel-1" id="faq-btn-1">
+                                <span>¿Dónde está Autoescuela Javier?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                            Estamos en el <strong>Passatge de les Delícies, 9</strong>, en Cornellà de Llobregat (08940, Barcelona). Puedes consultar el mapa interactivo justo debajo en la sección de contacto.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-btn-2">
+                                <span>¿Cuánto cuesta matricularse?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+                            En la sección de tarifas de esta página mostramos un importe orientativo de prototipo (150 €). Dado que esta web es una propuesta de diseño, contacta con la autoescuela para confirmar el importe exacto vigente.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-btn-3">
+                                <span>¿Qué incluye la matrícula?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+                            Antes de realizar la inscripción, en la autoescuela te detallaremos exactamente qué materiales didácticos, formación teórica y gestiones administrativas incluye la matrícula, así como las tasas oficiales que correspondan.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-btn-4">
+                                <span>¿Cuánto cuesta una práctica?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+                            En este prototipo hemos incluido un precio de ejemplo de 29 € por práctica individual y 275 € para el bono de 10 prácticas. Consulta con nosotros las tarifas definitivas actualizadas antes de comenzar.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-btn-5">
+                                <span>¿Cuándo puedo empezar las prácticas?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+                            Procuramos organizar la agenda para que los tiempos de espera al aprobar la teórica sean razonablemente reducidos. No obstante, la disponibilidad concreta depende del volumen de alumnos en cada momento y debe consultarse con el centro.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-btn-6">
+                                <span>¿Cómo sé si estoy preparado para examinarme?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6" hidden>
+                            Tu profesor realiza un seguimiento constante en cada clase. Te explicará con total sinceridad qué maniobras dominas y qué aspectos necesitas reforzar, aconsejándote ir a examen cuando tengas una preparación sólida y segura.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-7" id="faq-btn-7">
+                                <span>¿Puedo venir de otra autoescuela?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-7" role="region" aria-labelledby="faq-btn-7" hidden>
+                            Si ya tienes el examen teórico aprobado o deseas trasladar tu expediente desde otro centro, consúltanos tu situación para informarte sobre los trámites necesarios y la disponibilidad de clases prácticas.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3>
+                            <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-8" id="faq-btn-8">
+                                <span>¿Cómo puedo consultar los horarios?</span>
+                                <span class="accordion-icon" aria-hidden="true">+</span>
+                            </button>
+                        </h3>
+                        <div class="accordion-panel" id="faq-panel-8" role="region" aria-labelledby="faq-btn-8" hidden>
+                            Puedes llamarnos al 933 77 90 57 o acercarte a nuestro local en Passatge de les Delícies, 9 para confirmar los horarios de atención en oficina y las franjas disponibles para clases prácticas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 9 — CONTACTO Y UBICACIÓN -->
+        <section class="contact" id="contacto">
+            <div class="container">
+                <div style="margin-bottom: 1.75rem;">
+                    <span class="eyebrow">Atención al alumno</span>
+                    <h2 class="section-title">Contacto y ubicación en Cornellà</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-box">
+                        <div>
+                            <h3 style="font-family: var(--font-display); font-size: 1.38rem; color: var(--navy-primary);">
+                                Autoescuela Javier
+                            </h3>
+                            <p class="contact-notice">
+                                Durante buena parte del día estamos dando clases. Aquí puedes consultar la información principal y contactar con nosotros cuando lo necesites.
+                            </p>
+
+                            <div class="contact-details-list">
+                                <div class="contact-detail-row">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <div>
+                                        <span class="detail-label">Dirección del centro</span>
+                                        <span class="detail-value">Passatge de les Delícies, 9<br>08940 Cornellà de Llobregat, Barcelona</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-row">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                    <div>
+                                        <span class="detail-label">Teléfono de contacto</span>
+                                        <span class="detail-value"><a href="tel:+34933779057">933 77 90 57</a></span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-row" id="whatsapp-status-row">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                                    </svg>
+                                    <div>
+                                        <span class="detail-label">Atención por WhatsApp</span>
+                                        <span class="detail-value" id="whatsapp-status-text" style="font-size: 0.94rem; font-weight: 500; color: var(--text-secondary);">
+                                            Canal preparado para activarse en cuanto se confirme el número móvil de contacto.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <a href="tel:+34933779057" id="primary-contact-btn" class="btn btn-primary">
+                                Llamar al 933 77 90 57
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="btn btn-outline">
+                                Cómo llegar (Google Maps)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="map-column">
+                        <div class="map-frame-wrap">
+                            <!-- Mapa vinculado directamente a la búsqueda postal exacta de Google Maps sin coordenadas inventadas -->
+                            <iframe
+                                title="Mapa de ubicación de Autoescuela Javier en Passatge de les Delícies 9, Cornellà de Llobregat"
+                                src="https://www.google.com/maps?q=Autoescuela+Javier,+Passatge+de+les+Del%C3%ADcies,+9,+08940+Cornell%C3%A0+de+Llobregat,+Barcelona&output=embed"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="facade-reference-bar">
+                            <span><strong>Ubicación:</strong> Passatge de les Delícies, 9 · Cornellà</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat" target="_blank" rel="noopener noreferrer">
+                                Abrir en Google Maps →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-title">Autoescuela Javier</div>
+                    <p style="max-width: 42ch; line-height: 1.6;">
+                        Formación vial tradicional, cercana y rigurosa en Cornellà de Llobregat. Enseñamos a conducir con seguridad, paciencia y explicaciones claras.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="footer-title">Secciones</div>
+                    <ul class="footer-links">
+                        <li><a href="#nuestra-autoescuela">Nuestra filosofía</a></li>
+                        <li><a href="#como-ensenamos">Cómo preparamos tu carnet</a></li>
+                        <li><a href="#tarifas">Tarifas orientativas</a></li>
+                        <li><a href="#opiniones">Opiniones de alumnos</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="footer-title">Datos de contacto</div>
+                    <ul class="footer-links">
+                        <li>Passatge de les Delícies, 9</li>
+                        <li>08940 Cornellà de Llobregat (Barcelona)</li>
+                        <li>Teléfono: <a href="tel:+34933779057" style="color: #fff; font-weight: 600;">933 77 90 57</a></li>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query=Autoescuela+Javier+Passatge+de+les+Delicies+9+Cornella+de+Llobregat" target="_blank" rel="noopener noreferrer">Ficha en Google Maps</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Autoescuela Javier · Cornellà de Llobregat.</p>
+                <div class="prototype-disclaimer">
+                    <strong>Propuesta de diseño web:</strong> El emblema gráfico, las fotografías ilustrativas y los importes de tarifas son provisionales y están pendientes de validación por el titular del negocio.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BARRA INFERIOR DISCRETA PARA MÓVIL -->
+    <div class="mobile-QuickBar" role="region" aria-label="Acciones rápidas de contacto">
+        <a href="#tarifas" class="btn btn-outline">Ver tarifas</a>
+        <a href="tel:+34933779057" id="mobile-QuickBar-cta" class="btn btn-primary">Llamar · 933 77 90 57</a>
+    </div>
+
+    <!-- JAVASCRIPT VANILLA: CONFIGURACIÓN WHATSAPP, MENÚ MÓVIL Y ACORDEÓN ACCESIBLE -->
+    <script>
+        (function () {
+            "use strict";
+
+            /**
+             * CONFIGURACIÓN DE WHATSAPP
+             * Dejar vacío ("") mientras no esté confirmado el número de WhatsApp de la autoescuela.
+             * En cuanto se confirme, introducir el número con prefijo internacional sin '+' (ej: "34600000000").
+             */
+            const WHATSAPP_NUMBER = "";
+            const WHATSAPP_DEFAULT_TEXT = "Hola, he visto la web de Autoescuela Javier y me gustaría consultar información sobre el carnet de conducir.";
+
+            const primaryContactBtn = document.getElementById("primary-contact-btn");
+            const mobileQuickBarCta = document.getElementById("mobile-QuickBar-cta");
+            const whatsappStatusText = document.getElementById("whatsapp-status-text");
+            const contactTriggers = document.querySelectorAll(".js-contact-trigger");
+
+            const cleanWaNumber = WHATSAPP_NUMBER.replace(/\D/g, "");
+            if (cleanWaNumber.length >= 9) {
+                const waUrl = "https://wa.me/" + cleanWaNumber + "?text=" + encodeURIComponent(WHATSAPP_DEFAULT_TEXT);
+
+                if (primaryContactBtn) {
+                    primaryContactBtn.href = waUrl;
+                    primaryContactBtn.target = "_blank";
+                    primaryContactBtn.rel = "noopener noreferrer";
+                    primaryContactBtn.className = "btn btn-whatsapp";
+                    primaryContactBtn.textContent = "Escribir por WhatsApp";
+                }
+
+                if (mobileQuickBarCta) {
+                    mobileQuickBarCta.href = waUrl;
+                    mobileQuickBarCta.target = "_blank";
+                    mobileQuickBarCta.rel = "noopener noreferrer";
+                    mobileQuickBarCta.className = "btn btn-whatsapp";
+                    mobileQuickBarCta.textContent = "WhatsApp";
+                }
+
+                if (whatsappStatusText) {
+                    whatsappStatusText.innerHTML = '<a href="' + waUrl + '" target="_blank" rel="noopener noreferrer" style="color: var(--whatsapp-green); font-weight: 700;">Atención directa por WhatsApp disponible →</a>';
+                }
+
+                contactTriggers.forEach(function (btn) {
+                    btn.href = waUrl;
+                    btn.target = "_blank";
+                    btn.rel = "noopener noreferrer";
+                });
+            }
+
+            /**
+             * MENÚ MÓVIL ACCESIBLE
+             */
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileNav = document.getElementById("mobile-nav");
+
+            if (menuToggle && mobileNav) {
+                menuToggle.addEventListener("click", function () {
+                    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+                    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+                    mobileNav.classList.toggle("is-open", !isOpen);
+                });
+
+                const mobileLinks = mobileNav.querySelectorAll("a");
+                mobileLinks.forEach(function (link) {
+                    link.addEventListener("click", function () {
+                        menuToggle.setAttribute("aria-expanded", "false");
+                        mobileNav.classList.remove("is-open");
+                    });
+                });
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape" && mobileNav.classList.contains("is-open")) {
+                        menuToggle.setAttribute("aria-expanded", "false");
+                        mobileNav.classList.remove("is-open");
+                        menuToggle.focus();
+                    }
+                });
+            }
+
+            /**
+             * ACORDEÓN DE PREGUNTAS FRECUENTES
+             */
+            const accordionTriggers = document.querySelectorAll(".accordion-trigger");
+
+            accordionTriggers.forEach(function (trigger) {
+                trigger.addEventListener("click", function () {
+                    const isExpanded = trigger.getAttribute("aria-expanded") === "true";
+                    const panelId = trigger.getAttribute("aria-controls");
+                    const panel = document.getElementById(panelId);
+
+                    accordionTriggers.forEach(function (otherTrigger) {
+                        if (otherTrigger !== trigger) {
+                            otherTrigger.setAttribute("aria-expanded", "false");
+                            const otherPanelId = otherTrigger.getAttribute("aria-controls");
+                            const otherPanel = document.getElementById(otherPanelId);
+                            if (otherPanel) {
+                                otherPanel.hidden = true;
+                            }
+                        }
+                    });
+
+                    trigger.setAttribute("aria-expanded", String(!isExpanded));
+                    if (panel) {
+                        panel.hidden = isExpanded;
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
